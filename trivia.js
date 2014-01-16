@@ -199,4 +199,42 @@ var trivia = [
 
 
 
+    // 13. operation order, loose typing
+
+    function () {
+        var data = { one: 1, two: 2 };
+
+        return !data.two + 2 * 5;
+    },
+
+    // A. false
+    // B. 20
+    // C. 0
+    // D. 10
+
+
+
+    // 14. block syntax
+
+    function () {
+        var a = 1;
+        var b = 1;
+
+        if (a < 1)
+            a = 1;
+            b = 2;
+
+        if (a === 1)
+            a = 2;
+
+        return a + b;
+    },
+
+    // A. 4
+    // B. 3
+    // C. 2
+    // D. (error)
+
+
+
 ];
